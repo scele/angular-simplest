@@ -23,10 +23,10 @@
 
   <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
-
   <div ng-controller="MainCtrl">
     Test: {{test}}
+
+    Version from REST service: {{version.name}}
 
     <div ng-repeat="it in items">
       Test={{test}} Item.member1: {{it}}
@@ -39,5 +39,6 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="src/app.js"></script>
   <script src="src/controller.js"></script>
+  <script src="src/services.js"></script>
 </body>
 </html>
